@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="game.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <audio id="damage"><source src="audio/damage.mp3" type="audio/mpeg"></audio>
+    <audio id="expGain"><source src="audio/expGain.wav" type="audio/mpeg"></audio>
+    <audio id="fightTheme"><source src="audio/fightTheme.mp3" type="audio/mpeg"></audio>
+    <audio id="footsteps"><source src="audio/footsteps.wav" type="audio/mpeg"></audio>
+    <audio id="gameOverSound"><source src="audio/gameOverSound.mp3" type="audio/mpeg"></audio>
+    <audio id="healSound"><source src="audio/healSound.mp3" type="audio/mpeg"></audio>
+    <audio id="heavyHit"><source src="audio/heavyHit.mp3" type="audio/mpeg"></audio>
+    <audio id="keyPickup"><source src="audio/key_pickup.mp3" type="audio/mpeg"></audio>
+    <audio id="keyUsed"><source src="audio/keyUsed.mp3" type="audio/mpeg"></audio>
+    <audio id="levelUp"><source src="audio/levelUp.wav" type="audio/mpeg"></audio>
+    <audio id="lightHit"><source src="audio/lightHit.mp3" type="audio/mpeg"></audio>
+    <audio id="normalTheme" loop autoplay><source src="audio/normalTheme.mp3" type="audio/mpeg"></audio>
+    <audio id="stairs"><source src="audio/stairs.mp3" type="audio/mpeg"></audio>
+    <audio id="winGameScreen"><source src="audio/winGameScreen.mp3" type="audio/mpeg"></audio>
+    <audio id="damageZombie"><source src="audio/damageZombie.mp3" type="audio/mpeg"></audio>
+    <audio id="hurtSkeleton"><source src="audio/hurtSkeleton.mp3" type="audio/mpeg"></audio>
+    <audio id="energyDrain"><source src="audio/energyDrain.mp3" type="audio/mpeg"></audio>
+    <audio id="switchKeys"><source src="audio/switchKeys.mp3" type="audio/mpeg"></audio>
+
+
+    <div id=wrapper>
+    <div id="stage"><!-- palco do jogo --></div>
+    <div id="bars">
+        <p id="hp">Health Bar [100]</p>
+        <progress id="health" value="100" max="100"></progress>
+
+        <p id="xp">Experience Bar [Level 1]</p>
+        <progress id="experience" value="0" max="100"></progress>
+
+        <p id="counter">Energy Bar [120]</p>
+        <progress id="energy" value="120" max="120"></progress>
+
+        <div id="monsterBar">
+            <p id="monsterHp">Monster Health Bar [100]</p>
+            <progress id="monsterHealth" value="100" max="100"></progress>
+        </div>
+
+        <p id="light">Light Attack [8~10]</p>
+        <p id="heavy">Heavy Attack [12~15]</p>
+        <p id="keys">Golden Keys [0]</p>
+        <p id="nvl">Nivel: </p>
+
+    </div>
+
+    
+   <div id="infoPanel"><!--Painel informativo --></div>
+
+    </div>
+</body>
+
+</html>
